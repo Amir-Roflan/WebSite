@@ -1,16 +1,15 @@
 package main
 
 import (
+
 	"html/template"
 	"net/http"
 )
-
 type User struct
 {
 	Name string
 	Age int
 }
-
 func homepage(w http.ResponseWriter, r *http.Request){
 	person := User{"Alan", 18}
 	tmpl, err := template.ParseFiles("templates/home_page.html")
