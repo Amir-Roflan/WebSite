@@ -17,6 +17,10 @@ func homepage(w http.ResponseWriter, r *http.Request){
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return 
 	}
+
+	fs := http.FileServer(http.Dir("static"))
+	http.Handle("/static/", http.StripPrefix("/static/", fs))
+	
 	err = tmpl.Execute(w, person)
 	if err != nil{ 
 		http.Error(w, err.Error(), http.StatusInternalServerError) 
