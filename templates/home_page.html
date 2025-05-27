@@ -1,14 +1,47 @@
 {{ define "home_page" }}
 
+
 {{ template "header" }}
 <body>
-    <center>
-            
-    </center>
+    <p>Если вы хотите посмотреть удивительные городские пейзажи, невероятные виды нашей великой республики-Татарстан, 
+        то данный сайт именно для Вас! Здесь мы собрали информацию про города, известные и малоизвестные 
+        места этих мест, которые вы можете посетить.
+    </p>
+    <style>
+    
+  .rounded-box {
+    width: 500px;
+    height: px;
+    background-color: #ffffff;
+    border: 3px solid hsl(0, 0%, 0%);
+    border-radius: 15px;
+    padding: 8px;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: center;
+    
+  }
+  
+  .rounded-box:hover {
+    border-color: #000000;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+    
+  }
+</style>
 
-    <h2>Go to my bot: <a href="https://t.me/amirjohn1488_bot">Telegramm ExerciseBot made by @Roflan_q</a></h2>
+<div class="rounded-box">
+    <form>
+      <input type="text" placeholder="Искать здесь...">
+      <button type="submit"></button>
+    </form>
+</div>
+    <p>Если вы хотите посмотреть удивительные городские пейзажи, невероятные виды нашей великой республики-Татарстан, 
+        то данный сайт именно для Вас! Здесь мы собрали информацию про города, известные и малоизвестные 
+        места этих мест, которые вы можете посетить.
+    </p>
+
 </body>
-
+   
 </html>
 
 {{ template "footer" }}
