@@ -4,6 +4,7 @@ body {
     font-size: larger;
     font-weight: 1000;
 }
+
 /* здесь header */
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
@@ -34,32 +35,60 @@ a {
     margin-right: 200px;
 
 }
+/* здесь header */
 
-.rounded-box{
-    font-size: larger;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 1000;
+/* здесь главная страница */
+
+.main-info{
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgb(195, 252, 110);
+    border-radius: 20px;
     
 }
 
-* {box-sizing: border-box;}
-form {
-  position: relative;
-  margin: 0 auto;
-}
-input, button {
-  border: none;
-  outline: none;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 18;
-  font-weight: 1000;
-}
-input {
-  width: 100%;
-  height: 30px;
-  background: #ffffff;
-  padding-right: px;
-}
+.search-form {
+            display: flex;
+            width: 700px;
+            border: 3px solid #000000;
+            border-radius: 20px;
+            padding: 5px 15px;
+            background: #fff;
+            margin: auto;
+            
+        }
+        
+        .search-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 8px;
+            font-size: 20px;
+            
+        }
+
+.columns {
+    display: flex;
+    gap: 20px;
+  }
+  .text-tatarstan{
+    background-color: rgb(250, 120, 204);
+    border-radius: 2%;
+    text-align: center;
+    
+  }
+  .column-right {
+    flex: 0;
+    background-color: rgb(189, 118, 255);
+    border-radius: 2%;
+    text-align: center;
+    margin: auto;
+    padding-top: 60px; 
+  }
+/* здесь главная страница */
+
+
+
 
 /* здесь footer: */
 .site-footer {
@@ -159,7 +188,7 @@ input {
 
 
 .newsletter button {
-    background-color: #c5825e;
+    background-color: #ffffff;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -186,21 +215,6 @@ input {
     color: #bdc3c7;
 }
 
-.footer-bottom .footer-links {
-    display: flex;
-    gap: 15px;
-}
-
-.footer-bottom .footer-links a {
-    color: #bdc3c7;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-bottom .footer-links a:hover {
-    color: white
-}
-
 /* Адаптивность */
 @media (max-width: 768px) {
     .footer-top {
@@ -213,3 +227,4 @@ input {
         gap: 15px;
     }
 }
+/* здесь footer: */
