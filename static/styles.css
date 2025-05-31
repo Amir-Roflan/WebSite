@@ -42,7 +42,7 @@ a {
 .main-info{
     padding: 20px 0;
     text-align: center;
-    background-color: rgb(195, 252, 110);
+    background-color: rgb(170, 255, 161);
     border-radius: 20px;
     
 }
@@ -53,7 +53,7 @@ a {
             border: 3px solid #000000;
             border-radius: 20px;
             padding: 5px 15px;
-            background: #fff;
+            background: #ffffff;
             margin: auto;
             
         }
