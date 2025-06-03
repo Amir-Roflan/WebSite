@@ -1,0 +1,90 @@
+{{ define "about_page" }}
+
+
+{{ template "header" }}
+
+<!-- <link rel="stylesheet" href="/static/styles.css"> -->
+
+
+<body>
+<div class="column">
+
+  <div class="column-right">
+      <p class="about_info">
+          Привет, дорогие друзья, если вы задаетесь вопросом, что это за сайт, кто его сделал, для чего он нужен, то вся информация здесь:
+          если вы хотите посмотреть удивительные городские пейзажи, природу, невероятные виды нашей великой республики Татарстан, 
+          то данный сайт именно для Вас! Здесь мы собрали информацию про города, культурные объекты, парки, известные и малоизвестные 
+          места, которые вы можете изучить с помощью нашего сайта. 
+      </p>
+
+    </head>
+
+    <div> 
+      <p class="about_added_info">
+        Данный сайт создан с целью изучения по созданию вебразработки
+        студентами и не предоставлен 
+        для комерческой деятельности, надеюсь, что все понятно)
+      </p>
+    </div>
+  </div>
+
+
+  <div class="column-left">
+    <p class="photos-text">Главные разработчики: (кроме Алана)</p>
+    <img src="\static\photo\Amir.jpg" width="250px" class="round-images">
+    <p class="empty">     </p>
+    <img src="/static/photo/Alan.jpg" width="250px" class="round-images">
+  </div>
+
+</div>
+
+<style>
+
+.photos-text{
+  border-radius: 20px;
+  background-color: #18ffe8;
+  text-align: center;
+  border-style: double;
+}
+
+.column{
+  display: flex;
+  gap: 20px;
+}
+
+.about_added_info{
+  background: linear-gradient(to bottom, #9c6bf9, #f906d8);
+  border-radius: 20px;
+  text-align: center;
+  border-style: double;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+}
+
+.about_info{
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #4aff36, #3da4ff);
+  border-style: double;
+  text-align: center;
+}
+.round-images{
+  border-radius: 100px;
+  /* border-width: 5px rgb(88, 152, 255); */
+  box-shadow: 0 0 0 3px rgb(211, 53, 255), 0 0 13px #4f3ffd;
+}
+
+</style>
+
+</body>
+   
+
+</html>
+
+
+{{ template "footer" }}
+
+
+{{ end }}

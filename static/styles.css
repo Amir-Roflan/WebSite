@@ -1,21 +1,13 @@
 body {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
     font-weight: 1000;
 }
 
 /* здесь header */
-h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    font-size: 55px;
-    align-content: center;
-    color: white;
-    padding-top: 50;
-    text-align: center;
-}
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 1000;
     font-size: 22px;
     
@@ -26,7 +18,8 @@ a {
     font-size: 23px;
     text-align: center;
     color: white;
-    padding-top: 330px;
+    padding-top: 200px;
+    /* padding-top: 250px; */
 
 }
 
@@ -35,16 +28,35 @@ a {
     margin-right: 200px;
 
 }
+
+.hh{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: 1000px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    /* padding-top: 100px; */
+    padding-top: 160px;
+
+}
+
 /* здесь header */
+
+
 
 /* здесь главная страница */
 
 .main-info{
     padding: 20px 0;
     text-align: center;
-    background-color: rgb(170, 255, 161);
+    background-color: rgb(101, 238, 85);
     border-radius: 20px;
-    
+    width: 800px;
+    border-style: double;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .search-form {
@@ -55,7 +67,6 @@ a {
             padding: 5px 15px;
             background: #ffffff;
             margin: auto;
-            
         }
         
         .search-input {
@@ -64,35 +75,48 @@ a {
             outline: none;
             padding: 8px;
             font-size: 20px;
-            
         }
 
 .columns {
     display: flex;
-    gap: 20px;
+    gap: 50px;
   }
-  .text-tatarstan{
+  .text-left{
     background-color: rgb(250, 120, 204);
-    border-radius: 2%;
+    border-radius: 20px;
     text-align: center;
-    
-  }
-  .column-right {
-    flex: 0;
-    background-color: rgb(189, 118, 255);
-    border-radius: 2%;
-    text-align: center;
+    width: 700px;
     margin: auto;
-    padding-top: 60px; 
+    border-style: double;
+    margin-bottom: auto;
   }
-/* здесь главная страница */
+  .text-right {
+    /* flex: 0; */
+    background-color: rgb(189, 118, 255);
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: auto;
+    border-style: double;
+    margin-right: 50px;
+    
+    width: 400px;
+    align-self: auto;
+  }
+.round-city{
+    border-radius: 100px;
+    box-shadow: 0 0 0 3px purple, 0 0 13px rgb(180, 40, 255);
+    margin-left: 50px;
+    
+} 
 
+
+/* здесь главная страница */
 
 
 
 /* здесь footer: */
 .site-footer {
-    background-color: rgb(92, 92, 255);
+    background-color: rgb(55, 161, 255);
     color: #ecf0f1;
     padding: 40px 0 0;
     font-size: 15px;
