@@ -1,0 +1,124 @@
+{{ define "about_page" }}
+
+
+{{ template "header" }}
+
+<!-- <link rel="stylesheet" href="/static/styles.css"> -->
+</head>
+
+<body>
+<div class="container">
+  <div class="sidebar-left"> </div>
+  <div class="sidebar-right"> </div>
+  <div class="main-text">
+    <div class="column">
+      <div class="column-right">
+        <p class="about_info">
+            Привет, дорогие друзья, если вы задаетесь вопросом, что это за сайт, кто его сделал, для чего он нужен, то вся информация здесь:
+            если вы хотите посмотреть удивительные городские пейзажи, природу, невероятные виды нашей великой республики Татарстан, 
+            то данный сайт именно для Вас! Здесь мы собрали информацию про города, культурные объекты, парки, известные и малоизвестные 
+            места, которые вы можете изучить с помощью нашего сайта.  
+        </p>
+    
+        <div> 
+          
+          <p class="about_added_info">
+           Данный сайт создан с целью изучения по созданию вебразработки от студентов КНИТУ факультета ИУАИТ
+           и не предоставлен для какой-либо комерческой деятельности.
+           
+          </p>
+        </div>
+      </div>
+
+      <div class="column-left">
+        <p class="photos-text">Главные разработчики:</p>
+        <img src="\static\photo\Amir.jpg" width="250px" class="round-images">
+        <p class="empty">     </p>
+        <img src="/static/photo/Alan.jpg" width="250px" class="round-images">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+
+.sidebar-left{
+  flex: 1;
+  position: fixed;
+  top: 10px; 
+  bottom: 10px; 
+  width: 150px;
+  background: repeating-linear-gradient(
+    rgba(55, 161, 255, 0.5) 30px,
+    rgba(55, 161, 255, 0.5) 30px
+  );
+  z-index: -1; /* под основой находится ес чо*/
+  padding-left: 0x;
+}
+.sidebar-right{
+  flex: 1;
+  top: 10px; 
+  bottom: 10px; 
+  width: 150px;
+  right: 0;
+  background: repeating-linear-gradient(
+    rgba(55, 161, 255, 0.5) 30px,
+    rgba(55, 161, 255, 0.5) 30px
+  );
+  z-index: -1; 
+  padding-left: 0px;
+}
+.photos-text{
+  border-radius: 5px;
+  background-color: #18ffe8;
+  text-align: center;
+  border-style: double;
+  border-width: 5px;
+}
+
+.column{
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.about_added_info{
+  background-color: #3da4ff;
+  border-radius: 5px;
+  text-align: center;
+  border-style: double;
+  margin-left: 150px;
+  height: 150px;
+  padding-bottom: 20px;
+  padding-top: 80px;
+  border-width: 5px;
+  font-size: 25px;
+}
+
+.about_info{
+  border-radius: 5px;
+  border-width: 5px;
+  font-size: 25px;
+  background-color: #3da4ff;
+  border-style: double;
+  text-align: center;
+  margin-left: 150px;
+}
+.round-images{
+  border-radius: 1000px;
+  box-shadow: 0 0 0 3px rgb(255, 255, 255), 0 0 13px #0015ff;
+}
+
+</style>
+
+</body>
+   
+
+</html>
+
+
+{{ template "footer" }}
+
+
+{{ end }}
