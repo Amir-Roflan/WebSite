@@ -6,22 +6,31 @@
 
 <link rel="stylesheet" href="/static/styles.css">
 <body>
+  <div class="contrainer">
+    <div class="sidebar-left"> </div>
+    <div class="sidebar-right"> </div>
+    <div class="main-main">
     <p class="empty"> </p>  
-    <form action="/search" method="get" class="search-form">
-        <input type="search" name="q" class="search-input" placeholder="Поиск..." required>
+    <div class="img-city">
+        <div class="col1"><img src="\static\photo\Almet.jpg" width="100px" class="round-city"></div>
+        <div class="col2"><img src="\static\photo\Chelni.jpg" width="100px" class="round-city"></div>
+        <div class="col3"><img src="\static\photo\kazanchek.png" width="100px" class="round-city"></div> 
+        <div class="col4"><img src="\static\photo\innopolis.jpg" width="100px" class="round-city"></div> 
+        <div class="col5"><img src="\static\photo\sviyaga.jpg" width="100px" class="round-city"></div> 
+    </div>
+    <form action="/search_page" method="get" class="search-form">
+        <input type="text" name="q" class="search-input" placeholder="Поиск..." required>
     </form>
     <p class="main-info">
       Если вы хотите посмотреть удивительные городские пейзажи, природу, невероятные виды нашей великой республики Татарстан, 
         то данный сайт именно для Вас! Здесь мы собрали информацию про города, культурные объекты, парки, известные и малоизвестные 
         места, которые вы можете изучить с помощью нашего сайта.
     </p>
-
 </head>
 <body>
-    
 <p class="empty"> </p>     
 <div class="columns">
-      <div class="text-left">
+  <div class="text-left">
       Татарстан — удивительный регион, где переплетаются восточная гостеприимность и европейский комфорт, древние традиции и современные технологии. Здесь вас ждут величественные мечети, старинные крепости, живописные природные парки и, конечно, богатая кухня, покоряющая сердца гурманов.
 
         Казань — сердце Татарстана
@@ -59,7 +68,7 @@
 
 Откройте для себя Татарстан — край, где каждый найдет что-то свое! ✈️🌍</p>
 
-</div>
+  </div>
 
   <div class="column-right">
     <div class="text-right">
@@ -81,16 +90,49 @@
       </p>
       
     </div>
-      <p>    </p>
-        <img src="/static/photo/Almetyevsk.jpg" width="310px" class="round-city">
-      <p>    </p>
-        <img src="\static\photo\Chelni.jpg" width="300px" class="round-city">
-      <p>    </p>
-      
-    <!-- <div> -->
+    </div>
   </div>
-  
+  </div>
 </div>
+  
+
+
+
+<style> 
+.sidebar-left {
+  position: fixed;
+  top: 10px;
+  bottom: 10px; 
+  width: 120px;
+  background: repeating-linear-gradient(
+    
+    rgba(55, 161, 255, 0.5) 15px,
+    rgba(55, 161, 255, 0.5) 30px
+  );
+  z-index: -1; 
+  padding-left: 0px;
+}
+
+.sidebar-right {
+  position: fixed;
+  top: 10px; 
+  bottom: 10px; 
+  width: 90px;
+  right: 0;
+  background: repeating-linear-gradient(
+    
+    rgba(55, 161, 255, 0.5) 15px,
+    rgba(55, 161, 255, 0.5) 30px
+  );
+  z-index: -1; 
+  padding-left: 0px;
+}
+
+.main-main{
+  margin-left: 80px;
+}
+</style>
+
 
 </body>
    

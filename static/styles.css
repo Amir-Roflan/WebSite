@@ -3,6 +3,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
     font-weight: 1000;
+    
 }
 
 /* здесь header */
@@ -10,8 +11,13 @@ a {
     color: rgb(255, 255, 255);
     font-weight: 1000;
     font-size: 22px;
-    
 }
+
+/* a:hover{
+    background-color: rgb(148, 148, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 0 13px rgb(148, 148, 255), 0 0 25px rgb(255, 255, 255);
+} */
 .main_nav {
     height: auto;
     align-content: center;
@@ -20,13 +26,11 @@ a {
     color: white;
     padding-top: 200px;
     /* padding-top: 250px; */
-
 }
 
 .horizontal-items span{
     display: inline-block;
     margin-right: 200px;
-
 }
 
 .hh{
@@ -36,77 +40,113 @@ a {
     font-weight: 1000px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: auto;
-    /* padding-top: 100px; */
     padding-top: 160px;
-
 }
 
+.bg-slideshow {
+  width: 100%;
+  height: 85vh; /*На всю высоту экрана */
+  background-size: cover;
+  background-position: center;
+  animation: bgChange 60s infinite; 
+  
+}
+
+@keyframes bgChange {
+  0%, 20% {
+    background-image: url("https://avatars.mds.yandex.net/get-vertis-journal/3934100/red-shuheart-QdcjZppwMK8-unsplash.jpg_1736682648104/1600x1600");
+  }
+  30%, 40% {
+    background-image: url("https://tatarstan.ru/file/news/741_n2105546_big.jpg");
+  }
+  50%, 60% {
+    background-image: url("https://happylove.top/uploads/posts/2023-05/1684578962_happylove-top-p-kazan-dostoprimechatelnosti-dlya-turistov-60.jpg");
+  }
+  70%, 80% {
+    background-image: url("https://ic.pics.livejournal.com/zdorovs/16627846/1557359/1557359_original.jpg");
+  }
+  90%, 100% {
+    background-image: url("https://avatars.mds.yandex.net/get-vertis-journal/3934100/red-shuheart-QdcjZppwMK8-unsplash.jpg_1736682648104/1600x1600");
+  }
+}
 /* здесь header */
 
 
 
 /* здесь главная страница */
 
+.panel{
+    background-color: rgb(55, 161, 255);
+    width: 300px;
+}
 .main-info{
     padding: 20px 0;
     text-align: center;
-    background-color: rgb(101, 238, 85);
-    border-radius: 20px;
+    background-color: rgb(120, 200, 250);
+    border-radius: 5px;
     width: 800px;
     border-style: double;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    border-width: 5px;
+}
+
+.img-city{
+    display: flex;
+    gap: 20px;
+    /* margin-right: 300px; */
+    margin-left: 230px;
 }
 
 .search-form {
-            display: flex;
-            width: 700px;
-            border: 3px solid #000000;
-            border-radius: 20px;
-            padding: 5px 15px;
-            background: #ffffff;
-            margin: auto;
-        }
+    display: flex;
+    width: 700px;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background: #ffffff;
+    margin: auto;
+}
         
-        .search-input {
-            flex: 1;
-            border: none;
-            outline: none;
-            padding: 8px;
-            font-size: 20px;
-        }
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 20px;
+}
 
 .columns {
     display: flex;
-    gap: 50px;
-  }
-  .text-left{
-    background-color: rgb(250, 120, 204);
-    border-radius: 20px;
+    gap: 30px;
+}
+.text-left{
+    background-color: rgb(120, 200, 250);
+    border-radius: 5px;
     text-align: center;
-    width: 700px;
+    width: 500px;
     margin: auto;
     border-style: double;
     margin-bottom: auto;
-  }
+    border-width: 5px;
+}
   .text-right {
-    /* flex: 0; */
-    background-color: rgb(189, 118, 255);
-    border-radius: 20px;
+    background-color: rgb(120, 200, 250);
+    border-radius: 5px;
     text-align: center;
     margin-bottom: auto;
     border-style: double;
-    margin-right: 50px;
-    
+    margin-right: 100px;
+    border-width: 5px;
     width: 400px;
     align-self: auto;
-  }
+}
 .round-city{
-    border-radius: 100px;
-    box-shadow: 0 0 0 3px purple, 0 0 13px rgb(180, 40, 255);
-    margin-left: 50px;
-    
+    border-radius: 25px;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255), 0 0 13px black;
+
+    margin-left: 20px;
 } 
 
 

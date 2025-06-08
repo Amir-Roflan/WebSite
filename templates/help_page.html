@@ -6,29 +6,61 @@
  
 </head>
 <body>
+    <div class="container">
+        <div class="sidebar-left"> </div>
+        <div class="sidebar-right"> </div>
     <div class="help-text">
         <p> Частозадаваемые вопросы: 
             <ul>
                 <li>Когда обед? </li>
                 <li>Когда закончится пара?</li>
-                <li>Кто я?</li>
+                <li>Будет автомат по проге?)</li>
                 <li>А?</li>
             </ul>
         </p>
     </div>
+</div>
+
 
 
 <style>
     .help-text{
-        background-color: rgb(206, 66, 253);
-        border-radius: 20px;
+        background-color: rgb(130, 197, 255);
+        border-radius: 5px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
         width: 400px;
         border-style: double;
+        border-width: 5px;
     }
+    .sidebar-left {
+  position: fixed;
+  top: 10px; 
+  bottom: 10px; 
+  width: 150px;
+  background: repeating-linear-gradient(  
+    rgba(55, 161, 255, 0.5) 15px,
+    rgba(55, 161, 255, 0.5) 30px
+  );
+  z-index: -1; 
+  padding-left: 0px;
+}
+.sidebar-right {
+  position: fixed;
+  /* flex: 1; */
+  top: 10px; 
+  bottom: 10px; 
+  width: 150px;
+  right: 0;
+  background: repeating-linear-gradient(
+    rgba(55, 161, 255, 0.5) 15px,
+    rgba(55, 161, 255, 0.5) 30px
+  );
+  z-index: -1; 
+  padding-left: 0px;
+}
 </style>
 
 </body>
