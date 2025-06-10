@@ -13,11 +13,11 @@ a {
     font-size: 22px;
 }
 
-/* a:hover{
-    background-color: rgb(148, 148, 255);
-    border-radius: 20px;
-    box-shadow: 0 0 0 13px rgb(148, 148, 255), 0 0 25px rgb(255, 255, 255);
-} */
+a:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255);
+}
+
 .main_nav {
     height: auto;
     align-content: center;
@@ -276,7 +276,7 @@ a {
 }
 
 .copyright {
-    color: #bdc3c7;
+    color: #ffffff;
 }
 
 /* Адаптивность */
