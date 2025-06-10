@@ -32,6 +32,11 @@
             <div class="text-l">
                 <p>Название места: {{ .Name }}</p>
                 <p>Адрес данного места: {{ .Address }}</p>
+                <p>Координаты места: {{ .Lat }}, {{ .Lon }}</p>
+
+                <div class="map-container">
+                        <img src="{{ .MapURL }}" alt="Карта места" class="map-image">
+                </div>
             </div>
             
             {{ end }}
@@ -42,11 +47,11 @@
 </div>
 </div>
 
-
-
-
-
 <style>
+    .map-image{
+        border-radius: 150px;
+        border-style: double;
+    }
     .img-city{
     display: flex;
     gap: 20px;
